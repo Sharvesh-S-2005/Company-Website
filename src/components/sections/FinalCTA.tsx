@@ -1,6 +1,6 @@
 import { motion, useInView } from 'framer-motion'
 import { useRef } from 'react'
-import { ArrowRight, Calendar, Shield } from 'lucide-react'
+import { Shield } from 'lucide-react'
 
 function FadeIn({ children, delay = 0 }: { children: React.ReactNode; delay?: number }) {
   const ref = useRef(null)
@@ -54,25 +54,6 @@ export default function FinalCTA() {
           </p>
         </FadeIn>
 
-        {/* CTAs */}
-        <FadeIn delay={0.3}>
-          <div className="flex flex-wrap items-center justify-center gap-4 mb-12">
-            <a
-              href="#get-started"
-              className="btn-primary flex items-center gap-2.5 px-8 py-4 rounded-xl text-base font-bold"
-            >
-              Get Started
-              <ArrowRight size={18} />
-            </a>
-            <a
-              href="#demo"
-              className="btn-secondary flex items-center gap-2.5 px-8 py-4 rounded-xl text-base font-semibold"
-            >
-              <Calendar size={16} />
-              Book Demo
-            </a>
-          </div>
-        </FadeIn>
 
         {/* Closing line */}
         <FadeIn delay={0.4}>

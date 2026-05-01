@@ -31,7 +31,7 @@ export default function Navbar() {
           : 'bg-transparent'
       }`}
     >
-      <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between relative">
         {/* Logo */}
         <a href="#" className="flex items-center gap-2.5 group">
           <div className="relative">
@@ -47,8 +47,8 @@ export default function Navbar() {
           </span>
         </a>
 
-        {/* Desktop links */}
-        <div className="hidden md:flex items-center gap-8">
+        {/* Desktop links — absolutely centered */}
+        <div className="hidden md:flex items-center gap-8 absolute left-1/2 -translate-x-1/2">
           {navLinks.map((link) => (
             <a
               key={link.label}
@@ -60,21 +60,7 @@ export default function Navbar() {
           ))}
         </div>
 
-        {/* CTA */}
-        <div className="hidden md:flex items-center gap-3">
-          <a
-            href="#demo"
-            className="text-sm font-medium text-white/60 hover:text-white transition-colors"
-          >
-            Book Demo
-          </a>
-          <a
-            href="#get-started"
-            className="btn-primary px-4 py-2 rounded-lg text-sm font-semibold"
-          >
-            Get Started
-          </a>
-        </div>
+
 
         {/* Mobile menu toggle */}
         <button
@@ -106,9 +92,7 @@ export default function Navbar() {
                   {link.label}
                 </a>
               ))}
-              <a href="#get-started" className="btn-primary px-4 py-2.5 rounded-lg text-sm font-semibold text-center mt-2">
-                Get Started
-              </a>
+
             </div>
           </motion.div>
         )}

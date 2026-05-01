@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { ArrowRight, Play, Calendar, Lock, Zap, Globe } from 'lucide-react'
+import { Lock, Zap, Globe } from 'lucide-react'
 import HeroMap from '../HeroMap'
 
 const stats = [
@@ -69,26 +69,10 @@ export default function Hero() {
           className="flex flex-wrap items-center justify-center gap-4 mb-16"
         >
           <a
-            id="get-started"
-            href="#solution"
-            className="btn-primary flex items-center gap-2 px-7 py-3.5 rounded-xl text-sm font-bold"
-          >
-            Get Started
-            <ArrowRight size={16} />
-          </a>
-          <a
             href="#architecture"
             className="btn-secondary flex items-center gap-2 px-7 py-3.5 rounded-xl text-sm font-semibold"
           >
             View Architecture
-          </a>
-          <a
-            id="demo"
-            href="#final-cta"
-            className="btn-secondary flex items-center gap-2 px-7 py-3.5 rounded-xl text-sm font-semibold"
-          >
-            <Calendar size={15} />
-            Book Demo
           </a>
         </motion.div>
 
